@@ -1,6 +1,3 @@
-# Chhavva
-Chhavva is a modern e-commerce clothing platform inspired by the elegance of Indian fashion. Built with a seamless and user-friendly interface, Chhavva blends traditional style with contemporary design to offer a curated shopping experience for all.
-
 # Chhavva – E-Commerce Clothing Platform 👗🌸
 
 **Chhavva** is an e-commerce web application focused on delivering a stylish and culturally rooted shopping experience. Inspired by the Hindi word *Chhaya* (meaning "shade" or "style"), Chhavva aims to bring colorful, elegant, and diverse clothing collections to life.
