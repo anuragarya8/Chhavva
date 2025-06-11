@@ -66,7 +66,7 @@ import quality_icon from './quality_icon.png'
 import search_icon from './search_icon.png'
 import star_dull_icon from './star_dull_icon.png'
 import star_icon from './star_icon.png'
-import support_img from './support_img.png'
+import support_icon from './support_icon.png'
 import menu_icon from './menu_icon.png'
 import about_img from './about_img.png'
 import contact_img from './contact_img.png'
@@ -86,7 +86,7 @@ export const assets = {
     star_dull_icon,
     star_icon,
     bin_icon,
-    support_img,
+    support_icon,
     menu_icon,
     about_img,
     contact_img,

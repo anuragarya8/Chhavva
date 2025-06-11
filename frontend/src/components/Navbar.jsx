@@ -1,6 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
-import { NavLink,Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { useState } from 'react'
 
 const Navbar = () => {
@@ -9,23 +9,26 @@ const Navbar = () => {
 
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
-        <img src={assets.logo} className='w-36' alt="" />
+
+        <Link to='/'>
+            <img src={assets.logo} className='w-36' alt=""/>
+        </Link>
 
         <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
             <NavLink className='flex flex-col items-center gap-1' to='/'>
-                <p>Home</p>
+                <p>HOME</p>
                 <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
             </NavLink>
             <NavLink className='flex flex-col items-center gap-1' to='/collection'>
-                <p>Collection</p>
+                <p>COLLECTION</p>
                 <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
             </NavLink>
             <NavLink className='flex flex-col items-center gap-1' to='/about'>
-                <p>About</p>
+                <p>ABOUT</p>
                 <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
             </NavLink>
             <NavLink className='flex flex-col items-center gap-1' to='/contact'>
-                <p>Contact</p>
+                <p>CONTACT</p>
                 <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
             </NavLink>
         </ul>
@@ -49,7 +52,7 @@ const Navbar = () => {
                 <p className='absolute right-[-5] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>10</p>
             </Link>
 
-            {/* sidebar-menu for small screens */}
+            {/* sidebar-menu for small screens */} 
             <img onClick={()=>setVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden' alt="" />
         </div>
         
@@ -59,10 +62,10 @@ const Navbar = () => {
                     <img src={assets.dropdown_icon} className='h-4 rotate-180' alt="" />
                     <p>Back</p>
                 </div>
-                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to='/'>HOME</NavLink>
-                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to='/collection'>COLLECTION</NavLink>
-                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to='/about'>ABOUT</NavLink>
-                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to='/contact'>CONTACT</NavLink>
+                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border-none ' to='/'>HOME</NavLink>
+                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border-none' to='/collection'>COLLECTION</NavLink>
+                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border-none' to='/about'>ABOUT</NavLink>
+                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border-none' to='/contact'>CONTACT</NavLink>
             </div>
         </div>
 
