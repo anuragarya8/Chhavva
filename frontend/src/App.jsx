@@ -11,13 +11,17 @@ import Cart from './pages/Cart'
 import PlaceOrder from './pages/PlaceOrder'
 import Orders from './pages/Orders'
 import Navbar from './components/Navbar'
+import SearchBar from './components/SearchBar'
 import Footer from './components/Footer'
+import TermsCondition from './pages/TermsCondition'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
 
       <Navbar/>
+      <SearchBar/>
 
       <Routes>
         <Route path='/' element={<Home/>} />
@@ -29,6 +33,9 @@ const App = () => {
         <Route path='/cart' element={<Cart/>} />
         <Route path='/placeorder' element={<PlaceOrder/>} />
         <Route path='/orders' element={<Orders/>} />
+        <Route path='/termscondition' element={<TermsCondition/>} />
+        <Route path='/privacypolicy' element={<PrivacyPolicy/>} />
+        <Route path='*' element={<div className='text-center text-2xl font-bold'>404 Not Found</div>} />
       </Routes>
 
       <Footer/>

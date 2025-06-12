@@ -15,10 +15,10 @@ const Footer = () => {
             <div>
                 <h1 className='text-xl font-medium mb-5 '>COMPANY</h1>
                 <ul className='flex flex-col gap-1'>
-                    <li className='text-gray-600 hover:text-black cursor-pointer'>Home</li>
-                    <li className='text-gray-600 hover:text-black cursor-pointer'>About Us</li>
-                    <li className='text-gray-600 hover:text-black cursor-pointer'>Contact Us</li>
-                    <li className='text-gray-600 hover:text-black cursor-pointer'>Terms & Conditions</li>
+                    <li className='text-gray-600 hover:text-black cursor-pointer'><a href="/">Home</a></li>
+                    <li className='text-gray-600 hover:text-black cursor-pointer'><a href="/about">About Us</a></li>
+                    <li className='text-gray-600 hover:text-black cursor-pointer'><a href="/contact">Contact Us</a></li>
+                    <li className='text-gray-600 hover:text-black cursor-pointer'><a href='/termscondition'>Terms & Conditions</a></li>
                 </ul>
             </div>
             <div>
@@ -39,8 +39,8 @@ const Footer = () => {
                 <img src={assets.facebook} alt="Facebook" className='w-6 h-6 cursor-pointer' />
                 <img src={assets.instagram} alt="Instagram" className='w-6 h-6 cursor-pointer' />
                 <img src={assets.twitter} alt="Twitter" className='w-6 h-6 cursor-pointer' />
-            </div>
-            <p>Powered by Chhavva</p> */}
+            </div>*/}
+            {/* <p>Powered by Anurag Arya</p> */}
         </div>
     </div>
   )
