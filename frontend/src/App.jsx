@@ -15,11 +15,12 @@ import SearchBar from './components/SearchBar'
 import Footer from './components/Footer'
 import TermsCondition from './pages/TermsCondition'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import {ToastContainer} from 'react-toastify';
 
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
-
+      <ToastContainer />
       <Navbar/>
       <SearchBar/>
 

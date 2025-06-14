@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="flex flex-col justify-center items-start gap-6 text-gray-500">
           <p className='font-semibold text-xl text-gray-600'>Our Store</p>
           <p>123 Chhavva Street <br/> Sector-115, Mohali, India</p>
-          <p>Phone: (+91) 9876543210</p>
+          <p>Phone: +91 6202609943</p>
           <p className='font-semibold text-xl text-gray-600'>Careers at Chhavva</p>
           <p>Learn more about our teams and job openings.</p>
           <button className='border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500'>Explore Jobs</button>
