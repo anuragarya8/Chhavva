@@ -20,6 +20,12 @@ a.active hr {
  display: none;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 @media (max-width: 640px) {
   a.active {
     background-color: #4a5565;
