@@ -51,17 +51,69 @@ const addProduct = async (req, res) => {
 }
 
 // function for listing  product
-const listProduct = async (req, res) => {}
+const listProducts = async (req, res) => {
+    try{
+        const products = await productModel.find({});
+        res.json({success: true, products});
+
+    } catch (error) {
+        res.json({
+            success: false,
+            message: error.message
+        });
+        console.error("Error in listing products:", error);
+    }
+}
 
 // function for removing product
-const removeProduct = async (req, res) => {}
+const removeProduct = async (req, res) => {
+    try{
+        const deletedProduct = await productModel.findByIdAndDelete( req.body.id );
+
+        if (!deletedProduct) {
+            return res.json({
+                success: false, 
+                message: "Product not found or already deleted"
+            });
+        }
+
+        res.json({success: true, message: "Product removed successfully"});
+
+    } catch (error) {
+        res.json({
+            success: false,
+            message: error.message
+        });
+        console.error("Error in removing product:", error);
+    }
+}
 
 // function for single product info
-const singleProduct = async (req, res) => {}
+const singleProduct = async (req, res) => {
+    try {
+        const product = await productModel.findById(req.body.id);
+
+        if (!product) {
+            return res.json({
+                success: false,
+                message: "Product not found"
+            });
+        }
+
+        res.json({success: true, product});
+
+    } catch (error) {
+        res.json({
+            success: false,
+            message: error.message
+        });
+        console.error("Error in fetching single product:", error);
+    }
+}
 
 export {
     addProduct,
-    listProduct,
+    listProducts,
     removeProduct,
     singleProduct
 };
