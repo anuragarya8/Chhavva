@@ -1,11 +1,10 @@
 import React, { useContext } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import Title from '../components/Title';
-import { products } from '../assets/assets';
 
 const Orders = () => {
 
-  const { currency } = useContext(ShopContext);
+  const { currency, products } = useContext(ShopContext);
 
   return (
     <div className='border-t border-gray-300 pt-16'>
