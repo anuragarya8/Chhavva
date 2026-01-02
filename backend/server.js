@@ -21,7 +21,7 @@ app.use('/api/user', userRouter);
 app.use('/api/product', productRouter);
 
 app.get('/', (req, res) => {
-    res.send('Welcome to the backend server!');
+    res.send('Welcome to the Chhavva server!');
 });
 
 app.listen(port, () => console.log(`Server is running on http://localhost:${port}`));
