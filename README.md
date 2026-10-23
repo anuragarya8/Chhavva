@@ -1,27 +1,51 @@
-# Chhavva – E-Commerce Clothing Platform 👗🌸
+# Chhavva — MERN E-Commerce Clothing Platform
 
-**Chhavva** is an e-commerce web application focused on delivering a stylish and culturally rooted shopping experience. Inspired by the Hindi word *Chhaya* (meaning "shade" or "style"), Chhavva aims to bring colorful, elegant, and diverse clothing collections to life.
+Full-stack shopping experience for Indian fashion: product catalog, cart/checkout, JWT auth, and an admin dashboard. Live demo: [chhavva.vercel.app](https://chhavva.vercel.app)
 
-## ✨ Features
+## Features
 
-- 🛍️ Product browsing with categories and filters
-- 🧾 Cart & checkout flow with responsive design
-- 🔐 User authentication and order management
-- 📦 Admin dashboard for product and order control
-- 🎨 Beautiful UI inspired by desi aesthetics
+- Product browsing with categories and filters
+- Cart and checkout with responsive UI
+- JWT authentication and order management
+- Admin dashboard for products and orders
+- Desi-inspired visual design (React + Tailwind)
 
-## 🛠️ Tech Stack
+## Tech stack
 
-- **Frontend**: React.js / Tailwind CSS / Redux Toolkit
-- **Backend**: Node.js / Express.js
-- **Database**: MongoDB (Mongoose ODM)
-- **Authentication**: JWT
-- **Deployment**: Coming soon...
+| Layer | Stack |
+| --- | --- |
+| Frontend | React, Tailwind CSS, Redux Toolkit |
+| Backend | Node.js, Express |
+| Database | MongoDB + Mongoose |
+| Auth | JWT |
+| Deploy | Vercel (`frontend/`) |
 
-## 📌 Vision
+## Project structure
 
-To create a platform that celebrates the essence of Indian fashion—fusing tradition with modern convenience.
+```
+Chhavva/
+├── frontend/   # React storefront + admin UI
+├── backend/    # Express API
+└── admin/      # Admin-related assets
+```
 
----
+## Quick start
 
-Feel free to adjust depending on your exact features or progress stage. Would you like help creating a logo, UI color palette, or deploying it?
+```bash
+# API
+cd backend
+npm install
+cp .env.example .env   # or create .env with MONGO_URI, JWT_SECRET, etc.
+npm run dev
+
+# Storefront
+cd ../frontend
+npm install
+npm run dev
+```
+
+## Links
+
+- **Demo:** https://chhavva.vercel.app
+- **Author:** [anuragarya8](https://github.com/anuragarya8)
+- **Portfolio:** https://portfolio-orpin-sigma-37.vercel.app
